@@ -21,6 +21,12 @@ const theme = createTheme({
       dark: '#ef6c00',
       contrastText: 'rgba(0, 0, 0, 0.87)',
     },
+	},
+	typography: {
+		h1: {
+			fontSize: '30px',
+			fontWeight: 600,
+		}
 	}
 })
 export default theme
