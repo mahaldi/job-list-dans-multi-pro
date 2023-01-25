@@ -8,40 +8,40 @@ export const Card = ({ title, type, company, company_url, location, description,
 		<>
 			<WrapperCard container direction="column" spacing={0} onClick={onClick} large={large}>
 				<Grid xs={12} container direction="row" spacing={2}>
-					<Grid xs="auto">
-						<Typography>Title :</Typography>
+					<Grid xs={2}>
+						<Typography variant="h6">Title :</Typography>
 					</Grid>
 					<Grid xs="auto">
 						<Typography>{title}</Typography>
 					</Grid>
 				</Grid>
 				<Grid xs={12} container direction="row" spacing={2}>
-					<Grid xs="auto">
-						<Typography>type :</Typography>
+					<Grid xs={2}>
+						<Typography variant="h6">Type :</Typography>
 					</Grid>
 					<Grid xs="auto">
 						<Typography>{type}</Typography>
 					</Grid>
 				</Grid>
 				<Grid xs={12} container direction="row" spacing={2}>
-					<Grid xs="auto">
-						<Typography>company :</Typography>
+					<Grid xs={2}>
+						<Typography variant="h6">Company :</Typography>
 					</Grid>
 					<Grid xs="auto">
 						<Typography>{company}</Typography>
 					</Grid>
 				</Grid>
 				<Grid xs={12} container direction="row" spacing={2}>
-					<Grid xs="auto">
-						<Typography>company_url :</Typography>
+					<Grid xs={2}>
+						<Typography variant="h6">Company url :</Typography>
 					</Grid>
 					<Grid xs="auto">
 						<Typography>{company_url}</Typography>
 					</Grid>
 				</Grid>
 				<Grid xs={12} container direction="row" spacing={2}>
-					<Grid xs="auto">
-						<Typography>location :</Typography>
+					<Grid xs={2}>
+						<Typography variant="h6">Location :</Typography>
 					</Grid>
 					<Grid xs="auto">
 						<Typography>{location}</Typography>
@@ -51,8 +51,8 @@ export const Card = ({ title, type, company, company_url, location, description,
 					large && (
 						<>
 							<Grid xs={12} container direction="row" spacing={2}>
-								<Grid xs="auto">
-									<Typography>description :</Typography>
+								<Grid xs={2}>
+									<Typography variant="h6">Description :</Typography>
 								</Grid>
 								<Grid xs="auto">
 									<Typography>
@@ -63,8 +63,8 @@ export const Card = ({ title, type, company, company_url, location, description,
 								</Grid>
 							</Grid>
 							<Grid xs={12} container direction="row" spacing={2}>
-								<Grid xs="auto">
-									<Typography>how to apply :</Typography>
+								<Grid xs={2}>
+									<Typography variant="h6">How to apply :</Typography>
 								</Grid>
 								<Grid xs="auto">
 									<Typography>
@@ -78,11 +78,11 @@ export const Card = ({ title, type, company, company_url, location, description,
 					)
 				}
 				<Grid xs={12} container direction="row" spacing={2}>
-					<Grid xs="auto">
-						<Typography>url :</Typography>
+					<Grid xs={2}>
+						<Typography variant="h6">Url :</Typography>
 					</Grid>
 					<Grid xs="auto">
-						<Typography>{url}</Typography>
+						<a href={url} target="_blank" rel="noreferrer">{url}</a>
 					</Grid>
 				</Grid>
 			</WrapperCard>
