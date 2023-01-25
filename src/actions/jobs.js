@@ -12,3 +12,9 @@ export const fetchJobsList = (params) => dispatch => {
 		dispatch({ type: 'FAILED_JOBS_LIST'})
 	})
 }
+
+export const resetJobsList = () => dispatch => {
+	dispatch({
+		type: 'RESET_JOBS_LIST',
+	})
+}
